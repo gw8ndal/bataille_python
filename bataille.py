@@ -43,3 +43,6 @@ print('Joueur 1 : ', joueur1)
 print('Joueur 2 : ', joueur2)
 
 
+#    reste a faire : 
+# - fonction pour montrer les cartes une par une
+# - redonner la carte a celui qui a joué la plus haute

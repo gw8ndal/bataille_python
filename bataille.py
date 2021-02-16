@@ -29,8 +29,8 @@ def melanger_jeu():
 
 # fonction pour distribuer les cartes
 def distribuer_jeu():
-    joueur1 = jeu[0, len(jeu)//2]
-    joueur2 = jeu[len(jeu//2), -1]
+    joueur1 = jeu[0:len(jeu)//2]
+    joueur2 = jeu[len(jeu)//2:-1]
     return(joueur1, joueur2)
 
 

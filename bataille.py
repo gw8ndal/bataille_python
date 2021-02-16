@@ -29,18 +29,27 @@ def melanger_jeu():
 
 # fonction pour distribuer les cartes
 def distribuer_jeu():
-    for carte in jeu:
-        if len(joueur1) < (len(jeu)//2):
-            joueur1.append(carte)
-        else:
-            joueur2.append(carte)
+    joueur1 = jeu[0, len(jeu)//2]
+    joueur2 = jeu[len(jeu//2), -1]
     return(joueur1, joueur2)
+
+
 
 
 creer_jeu()
 distribuer_jeu()
 print('Joueur 1 : ', joueur1)
 print('Joueur 2 : ', joueur2)
+
+def jouer():
+    for tour in range(len(jeu)//2):
+        for carte1 in joueur1:
+            for carte2 in joueur2:
+                print('Joueur 1 : ', carte1, 'Joueur 2 : ', carte2)
+                time.sleep(2)
+ 
+
+jouer()
 
 
 #    reste a faire : 
